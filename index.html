@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>达州市中级人民法院</title>
+	<link rel="stylesheet" type="text/css" href="public/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+</head>
+<body>
+	
+	<!--[if lt IE 7]>
+        <p class="browsehappy">您正在使用<strong>过时的</strong>浏览器。请<a href="http://browsehappy.com/">升级浏览器</a>以保证正常浏览！</p>
+    <![endif]-->
+    
+    <div class="site-bg"><img src="public/images/bg.png" alt=""></div>
+
+	<div class="header">
+		<div class="main-container clearfix">
+			<h1 class="logo">
+				<a href="#" title="达州市中级人民法院">
+					<img src="public/images/logo.png" alt="达州市中级人民法院">
+				</a>
+			</h1>
+			<div class="out-nav clearfix">
+				<p class="weibo-btn"><a href="http://weibo.com/u/3482626037?refer_flag=1001030101_&is_hot=1" target="_blank"></a></p>
+				<p class="wecat-btn"><a href="javascript:;"></a></p>
+				<p class="service-btn">
+					<a href="http://zxgk.sccourt.gov.cn/webapp/area/scsfgk/index.jsp"  target="_blank">网上诉讼<br>服务中心</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container body-container clearfix">
+		<div class="court-build">
+			<figure class="effect-bubba">
+				<img src="public/images/courtBuild.jpg" alt="达州市中级人民法院">
+				<figcaption>
+					<h2><span>达州市中级人民法院</span></h2>
+					<p>DAZHOU Intermediate People's Courts</p>
+				</figcaption>			
+			</figure>
+		</div>
+		<div class="nav-container">
+			<div class="nav-container-sm clearfix">
+				<div class="nav-item nav-item1">
+					<a href="cpws/index.html">
+						<img src="public/images/nav-item2.png" alt="裁判文书公开平台">
+						<p>裁判文书公开平台</p>
+					</a>
+				</div>
+				<div class="nav-item nav-item2">
+					<a href="splc/index.html">
+						<img src="public/images/nav-item1.png" alt="审判流程公开平台">
+						<p>审判流程公开平台</p>
+					</a>
+				</div>
+				<div class="nav-item nav-item3">
+					<a href="zxxx/index.html">
+						<img src="public/images/nav-item3.png" alt="执行信息公开平台">
+						<p>执行信息公开平台</p>
+					</a>
+				</div>
+			</div>
+			<div class="nav-container-lg clearfix">
+				<div class="nav-item nav-item4 active">
+					<a href="javascript:">
+						<span class="tip">法院通过网络接受您提交的一审民商事案件的起诉状和相关诉讼材料或申请执行书并在线审查的一种便民方式。经初步审查后，若您的材料齐全，法院将与您约定具体的立案接待时间，以避免您多次往返。</span>
+						<img src="public/images/nav-item4.png" alt="网上立案平台">
+						<p>网上立案平台</p>
+					</a>
+				</div>
+				<div class="nav-item nav-item5">
+					<a href="javascript:;">
+						<span class="tip">依法执行本院作出并发生法律效力的民事判决、裁定、调解和刑事判决、裁定中的财产部分，执行法律规定应由本院执行的仲裁裁决、公证债权文书、行政非诉案件和其他法院委托执行的案件等。</span>
+						<img src="public/images/nav-item5.png" alt="网上执行局">
+						<p>网上执行局</p>
+					</a>
+				</div>
+				<div class="nav-item nav-item6">
+					<a href="http://www.scdzcourt.gov.cn/">
+						<span class="tip">政务公开将人民法院的工作内容公开化、透明化，对于法院筹划或正准备进行的各项工作内容及进程予以公开，任何公民都可以通过特定途径，如政务公开栏、政务公开网络等进行查询、监督。</span>
+						<img src="public/images/nav-item6.png" alt="达州市中级人民法院政务网站">
+						<p>政务网站</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		注册单位：达州市中级人民法院  技术支持：深圳市千合科技有限公司<br>
+		蜀ICP备14002101号
+	</div>
+
+	<script type="text/javascript" src="public/js/jquery-1.11.2.min.js"></script>
+	<script src="public/js/layer/layer.js"></script>
+	<script type="text/javascript" src="public/js/common.js"></script>
+	<script type="text/javascript">
+		$(".wecat-btn").click(function() {
+			$(".nav-container").addClass('blur');
+			layer.open({
+				type: 1,
+				title:  ["扫描二维码，关注微信公众号！"],
+				closeBtn: 1,
+				shade: [0.9, '#000000'],
+				shadeClose: true,
+				content: '<img src="public/images/code.jpg" width="300" height="300" alt="达州市中级人民法院" />',
+				end: function(){
+					$(".nav-container").removeClass('blur');
+				}
+			});
+		});
+		
+		// 导航块动画
+		$(".nav-container-lg .nav-item").hover(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		});
+
+		(function(){
+			if(document.body.clientHeight >780){
+				$(".copyright").addClass("footer-fixed");
+			}
+			$(window).resize(function() {
+				if(document.body.clientHeight >780){
+					$(".copyright").addClass("footer-fixed");
+				}else{
+					$(".copyright").removeClass("footer-fixed");
+				}
+			});
+		})();
+
+	</script>
+</body>
+</html>

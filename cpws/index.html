@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>达州市中级人民法院公共服务网</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+</head>
+<body>
+	<div class="header">
+		<div class="mainBox clearfix">
+			<h1 class="logo">
+				<a href="index.html" title="达州市中级人民法院裁判文书公开平台">
+					<img src="images/logo.png" alt="裁判文书公开平台">
+				</a>
+			</h1>
+
+			<ul class="nav-group">
+				<li class="nav-item"><a href="list.html" class="active">首页</a></li>
+				<li class="nav-item"><a href="list.html">民事案件</a></li>
+				<li class="nav-item"><a href="list.html">刑事案件</a></li>
+				<li class="nav-item"><a href="list.html">行政案件</a></li>
+				<li class="nav-item"><a href="list.html">执行案件</a></li>
+				<li class="nav-item"><a href="list.html">赔偿案件</a></li>
+			</ul>
+
+			<a href="javascript:;" class="main-nav-btn">
+				<em>导航&nbsp;</em><img src="images/nav-btn.png" alt="导航栏">
+			</a>
+		</div>	
+	</div>
+
+	<div class="slide-nav">
+		<ul class="slide-nav-group">
+			<li class="slide-nav-item"><a href="javascript:;">网站首页</a></li>
+			<li class="slide-nav-item"><a href="javascript:;">审判流程</a></li>
+			<li class="slide-nav-item"><a href="javascript:;">执行信息</a></li>
+			<li class="slide-nav-item"><a href="javascript:;">裁判文书</a></li>
+			<li class="slide-nav-item"><a href="javascript:;">网上立案</a></li>
+			<li class="slide-nav-item"><a href="javascript:;">网上执行局</a></li>
+			<li class="slide-nav-item"><a href="javascript:;">政务网站</a></li>
+		</ul>
+	</div>
+
+	<div id="section-group">
+
+		<div class="section section1">
+			<div class="document-search-bar">
+				<form class="mainBox clearfix" action="">
+					<p class="title">裁判文书查询</p>
+					<p class="keyworld">
+						<input type="text" placeholder="标题" name="" value="">
+					</p>
+					<p class="anhao">
+						<input type="text" placeholder="案号" name="" value="">
+					</p>
+					<p class="start-time">
+						<input placeholder="起始日期" name="" value="" class="laydate-icon" onclick="laydate()">
+					</p>
+					<p class="end-time">
+						<input placeholder="结束日期" name="" value="" class="laydate-icon" onclick="laydate()">
+					</p>
+					<p class="search-btn">
+						<input type="button" value="查询">
+					</p>
+				</form>
+			</div>
+		</div>
+
+		<div class="section section2">
+			<h2 class="section-title">数说文书</h2>
+			<p class="section-title-en">DOCUMENT BASED IN DATA</p>
+			<div class="dataChart">
+				<div id="chart1"></div>
+				<div id="chart2"></div>
+			</div>
+		</div>
+		
+		<div class="section section3">
+			<h2 class="section-title">裁判文书</h2>
+			<p class="section-title-en">JUDGE DOCUMENT</p>
+			<div class="document">
+				<ul class="document-type clearfix">
+					<li class="type-item active ">
+						<a href="javascript:;">
+							<span class="tip"><img src="images/tab-tip.png" alt=""></span>
+							<em class="title">民事案件</em>
+						</a>
+					</li>
+					<li class="type-item">
+						<a href="javascript:;">
+							<span class="tip"><img src="images/tab-tip.png" alt=""></span>
+							<em class="title">刑事案件</em>
+						</a>
+					</li>
+					<li class="type-item">
+						<a href="javascript:;">
+							<span class="tip"><img src="images/tab-tip.png" alt=""></span>
+							<em class="title">行政案件</em>
+						</a>
+					</li>
+					<li class="type-item">
+						<a href="javascript:;">
+							<span class="tip"><img src="images/tab-tip.png" alt=""></span>
+							<em class="title">执行案件</em>
+						</a>
+					</li>
+					<li class="type-item">
+						<a href="javascript:;">
+							<span class="tip"><img src="images/tab-tip.png" alt=""></span>
+							<em class="title">赔偿案件</em>
+						</a>
+					</li>
+					<li class="type-item">
+						<a href="javascript:;">
+							<span class="tip"><img src="images/tab-tip.png" alt=""></span>
+							<em class="title">涉外案件</em>
+						</a>
+					</li>
+					<li class="type-item">
+						<a href="javascript:;">
+							<span class="tip"><img src="images/tab-tip.png" alt=""></span>
+							<em class="title">&nbsp;&nbsp;更多...</em>
+						</a>
+					</li>
+				</ul>
+				<table class="document-list">
+					<thead>
+						<tr>
+							<th>法院名称</th>
+							<th>文书标题</th>
+							<th>案号</th>
+							<th>发布时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>达州市中级人民法院</td>
+							<td><a href="javascript:;">罪犯毛杰减刑刑事裁定书</a></td>
+							<td>（2014）达中刑执字第1310号</td>
+							<td>2015-08-26</td>
+						</tr>
+						<tr>
+							<td>达州市中级人民法院</td>
+							<td><a href="javascript:;">罪犯毛杰减刑刑事裁定书</a></td>
+							<td>（2014）达中刑执字第1310号</td>
+							<td>2015-08-26</td>
+						</tr>
+						<tr>
+							<td>达州市中级人民法院</td>
+							<td><a href="javascript:;">罪犯毛杰减刑刑事裁定书</a></td>
+							<td>（2014）达中刑执字第1310号</td>
+							<td>2015-08-26</td>
+						</tr>
+						<tr>
+							<td>达州市中级人民法院</td>
+							<td><a href="javascript:;">罪犯毛杰减刑刑事裁定书</a></td>
+							<td>（2014）达中刑执字第1310号</td>
+							<td>2015-08-26</td>
+						</tr>
+						<tr>
+							<td>达州市中级人民法院</td>
+							<td><a href="javascript:;">罪犯毛杰减刑刑事裁定书</a></td>
+							<td>（2014）达中刑执字第1310号</td>
+							<td>2015-08-26</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="section section4">
+			<h2 class="section-title">裁判文书热搜点击榜</h2>
+			<p class="section-title-en">DOCUMENT Hot search</p>
+			<ul class="document-list clearfix">
+				<li class="document-item clearfix">
+					<a href="#">
+						<h6 class="num">1</h6>
+						<p class="title">
+							原告王皓民与被告四川尚城置业有限公司房屋买卖合同纠纷一审民事判决书
+						</p>
+						<span class="date">2014-06-27</span>
+					</a>
+				</li>
+				<li class="document-item clearfix">
+					<a href="#">
+						<h6 class="num">2</h6>
+						<p class="title">
+							原告王皓民与被告四川尚城置业有限公司房屋买卖合同纠纷一审民事判决书
+						</p>
+						<span class="date">2014-06-27</span>
+					</a>
+				</li>
+				<li class="document-item clearfix">
+					<a href="#">
+						<h6 class="num">3</h6>
+						<p class="title">
+							原告王皓民与被告四川尚城置业有限公司房屋买卖合同纠纷一审民事判决书
+						</p>
+						<span class="date">2014-06-27</span>
+					</a>
+				</li>
+				<li class="document-item clearfix">
+					<a href="#">
+						<h6 class="num">4</h6>
+						<p class="title">
+							原告王皓民与被告四川尚城置业有限公司房屋买卖合同纠纷一审民事判决书
+						</p>
+						<span class="date">2014-06-27</span>
+					</a>
+				</li>
+				<li class="document-item clearfix">
+					<a href="#">
+						<h6 class="num">5</h6>
+						<p class="title">
+							原告王皓民与被告四川尚城置业有限公司房屋买卖合同纠纷一审民事判决书
+						</p>
+						<span class="date">2014-06-27</span>
+					</a>
+				</li>
+				<li class="document-item clearfix">
+					<a href="#">
+						<h6 class="num">6</h6>
+						<p class="title">
+							原告王皓民与被告四川尚城置业有限公司房屋买卖合同纠纷一审民事判决书
+						</p>
+						<span class="date">2014-06-27</span>
+					</a>
+				</li>
+				<li class="document-item clearfix">
+					<a href="#">
+						<h6 class="num">7</h6>
+						<p class="title">
+							原告王皓民与被告四川尚城置业有限公司房屋买卖合同纠纷一审民事判决书
+						</p>
+						<span class="date">2014-06-27</span>
+					</a>
+				</li>
+			</ul>
+			<div class="copyRight">
+				<p class="right">注册单位：达州市中级人民法院  技术支持：深圳市千合科技有限公司 </p>
+				<p>蜀ICP备14002101号</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/laydate/laydate.js"></script>
+	<script src="https://cdn.bootcss.com/echarts/3.5.3/echarts.min.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		// 文书选项卡
+		$(".type-item").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		});
+	</script>
+</body>
+</html>
